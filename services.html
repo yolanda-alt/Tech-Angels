@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale">
+    <title>Lungile</title>
+</head>
+
+<body>
+
+     <!--Navigation bar statrts here-->
+     
+     <div style="background-image:url(c60142f25e0ed847c4ec1abdd20a59e1.jpg);background-size:250vw ;height: 270vh;">
+        <nav>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="032bb4387d0796e02d7e23ac92adea99.jpg" style="width:90%;height: 180vh;">
+  <div class="text"> We offer </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src=" 900f98f2cc6a2dd749207d0320a897b5.jpg" style="width:90%;height: 180vh;">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="152b01af3c79b4deced8f751df8db09b.jpg" style="width:90%;height: 180vh;">
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
+
+<!-- Virtual Classroom -->
+<div class="virtual-classroom">
+    <video id="video" width="640" height="480"></video>
+    <canvas id="screen-sharing" width="640" height="480"></canvas>
+    <div class="chat-interface">
+      <textarea id="chat-input"></textarea>
+      <button id="send-button">Send</button>
+    </div>
+  </div>
+  
+  <!-- Course Content -->
+  <ul class="course-content">
+    <li>
+      <details>
+        <summary>Lesson 1: Introduction</summary>
+        <p>Course introduction and overview.</p>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Lesson 2: HTML Basics</summary>
+        <p>Learn the basics of HTML.</p>
+      </details>
+    </li>
+  </ul>
+  
+  <!-- Payment Form -->
+  <form class="payment-form">
+    <label for="card-number">Card Number:</label>
+    <input type="text" id="card-number" name="card-number">
+    <label for="expiration-date">Expiration Date:</label>
+    <input type="text" id="expiration-date" name="expiration-date">
+    <button type="submit">Pay Now</button>
+  </form>
+  
+  <!-- Video Embedding -->
+  <video width="640" height="480" controls>
+    <source src="movie.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+  <!-- Chat and Q&A -->
+  <textarea id="chat-input"></textarea>
+  <button id="send-button">Send</button>
+  <ul id="chat-log"></ul>
+  
+  <!-- Course Management -->
+  <ul class="course-content">
+    <li>
+      <details>
+        <summary>Lesson 1: Introduction</summary>
+        <p>Course introduction and overview.</p>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Lesson 2: HTML Basics</summary>
+        <p>Learn the basics of HTML.</p>
+      </details>
+    </li>
+  </ul>
+
+  <div class="services-section">
+    <h2>Our Services</h2>
+    <p>We offer a range of services designed to support and empower women in tech.</p>
+    <div class="service-cards">
+      <div class="service-card">
+        <i class="fas fa-code"></i>
+        <h3>Coding Classes</h3>
+        <p>Learn to code with our expert instructors and gain the skills you need to succeed in tech.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>Mentorship Programs</h3>
+        <p>Get paired with an experienced mentor who can guide you through your tech journey.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-network-wired"></i>
+        <h3>Networking Events</h3>
+        <p>Connect with other women in tech and industry leaders at our networking events.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-briefcase"></i>
+        <h3>Career Coaching</h3>
+        <p>Get expert advice on how to advance your tech career and achieve your goals.</p>
+      </div>
+    </div>
+    <button onclick="window.location.href='(link to services page)'">Learn More About Our Services</button>
+  </div>
